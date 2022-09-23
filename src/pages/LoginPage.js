@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import ButtonLoginWith from '../components/ButtonLoginWith'
-import { ImAppleinc, ImFacebook2, ImGoogle } from 'react-icons/im'
+import { ImAppleinc, ImFacebook2 } from 'react-icons/im'
+import { FcGoogle } from 'react-icons/fc'
 import HrAndOr from '../components/HrAndOr'
 import InputLogin from '../components/InputLogin'
 import CheckBoxLogin from '../components/CheckBoxLogin'
@@ -15,9 +16,9 @@ const LoginPage = () => {
             <main className='max-w-md mx-auto p-2'>
                 <p className='font-bold text-center mt-11 mb-4 text-sm'>Untuk melanjutkan, masuk ke Spotify.</p>
                 <div className='flex flex-col gap-3'>
-                    <ButtonLoginWith bgColor='bg-button-fb' color='text-white' icon={<ImFacebook2 />}>  LANJUTKAN DENGAN FACEBOOK</ButtonLoginWith>
-                    <ButtonLoginWith bgColor='bg-button-apple' color='text-white' icon={<ImAppleinc />}> LANJUTKAN DENGAN APPLE</ButtonLoginWith>
-                    <ButtonLoginWith bgColor='bg-white' color='text-[#6A6A6A]' icon={<ImGoogle />}> LANJUTKAN DENGAN GOOGLE</ButtonLoginWith>
+                    <ButtonLoginWith bgColor='bg-button-fb' color='text-white' icon={<ImFacebook2 size='21' />}>  LANJUTKAN DENGAN FACEBOOK</ButtonLoginWith>
+                    <ButtonLoginWith bgColor='bg-button-apple' color='text-white' icon={<ImAppleinc size='21' />}> LANJUTKAN DENGAN APPLE</ButtonLoginWith>
+                    <ButtonLoginWith bgColor='bg-white' color='text-[#6A6A6A]' icon={<FcGoogle size='21' />}> LANJUTKAN DENGAN GOOGLE</ButtonLoginWith>
                 </div>
                 <HrAndOr className='mt-6' />
                 <form>
